@@ -3,8 +3,14 @@ import {BrowserModule} from '@angular/platform-browser';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {HeaderModule} from './header/header.module';
-import {PanelModule} from 'primeng/panel';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {HttpClient, HttpClientModule} from '@angular/common/http';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
+    return new TranslateHttpLoader(http);
+}
 
 @NgModule({
     declarations: [
@@ -13,8 +19,15 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     imports: [
         BrowserModule,
         BrowserAnimationsModule,
+        HttpClientModule,
 
-        PanelModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient]
+            }
+        }),
 
         AppRoutingModule,
         HeaderModule
