@@ -6,5 +6,15 @@
         "Activities": "Tevékenységek",
         "Members": "Tagjaink",
         "Contact": "Kapcsolat"
+    },
+    "Members": {
+        "Title": "Tagjaink"
+    },
+    "MemberType": {
+        "MEMBER": "Tag",
+        "PRESIDENT": "Elnök",
+        "SECRETARY": "Titkár",
+        "FOUNDATION_MEMBER": "Alapító tag",
+        "FELLOW": "Pártoló tag"
     }
 }

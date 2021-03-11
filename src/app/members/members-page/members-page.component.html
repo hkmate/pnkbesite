@@ -1,1 +1,52 @@
-<p>members-page works!</p>
+<h2>{{ 'Members.Title' | translate }}</h2>
+
+<div class="p-grid">
+    <div class="p-col-12">
+        <p-dataView #dv [value]="members" [paginator]="true" [rows]="9" filterBy="lastName,firstName" layout="grid">
+            <ng-template pTemplate="header">
+                <div class="p-d-flex p-flex-column p-flex-md-row p-jc-md-between">
+                    <span class="p-input-icon-left p-mb-2 p-mb-md-0">
+                    <i class="pi pi-search"></i>
+                    <input type="search" pInputText placeholder="Search by Name"
+                           (input)="dv.filter($event.target.value)">
+                </span>
+                    <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
+                </div>
+            </ng-template>
+            <ng-template let-member pTemplate="listItem">
+                <div class="p-col-12">
+                    <div class="member-list-item p-grid">
+                        <img [src]="member.profilePicUrl" [alt]="member.firstName"/>
+                        <div class="member-list-detail p-as-center">
+                            <div class="member-name">{{ member.lastName }} {{ member.firstName }}</div>
+                            <div class="member-types">
+                                <span *ngFor="let memberType of member.types"
+                                      class="member-type">
+                                    {{ 'MemberType.' + memberType | translate }}
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template let-member pTemplate="gridItem">
+                <div class="p-col-12 p-md-4 p-lg-2">
+                    <div class="p-col-12">
+                        <div class="member-grid-item">
+                            <img [src]="member.profilePicUrl" [alt]="member.firstName"/>
+                            <div class="member-grid-detail">
+                                <div class="member-name">{{ member.lastName }} {{ member.firstName }}</div>
+                                <div class="member-types">
+                                <span *ngFor="let memberType of member.types"
+                                      class="member-type">
+                                    {{ 'MemberType.' + memberType | translate }}
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </p-dataView>
+    </div>
+</div>

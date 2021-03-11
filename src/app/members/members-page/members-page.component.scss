@@ -1,0 +1,49 @@
+
+.member-list-item {
+
+    vertical-align: middle;
+
+    img {
+        max-width: 100px;
+        max-height: 100px;
+        display: inline-block;
+        margin: 5px 0 5px 0;
+    }
+
+    .member-types {
+        padding-left: 5px;
+    }
+}
+
+.member-grid-item {
+
+    vertical-align: middle;
+    text-align: center;
+
+    img {
+        max-width: 90%;
+        max-height: 90%;
+    }
+}
+
+.member-grid-detail, .member-list-detail {
+
+    display: inline-block;
+
+    .member-name {
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    .member-types {
+        font-size: smaller;
+
+        .member-type {
+            padding-left: 5px;
+            padding-right: 5px;
+            margin-right: 3px;
+            background: var(--surface-d);
+            border-radius: 5px;
+        }
+    }
+}

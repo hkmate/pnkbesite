@@ -6,5 +6,15 @@
         "Activities": "Activities",
         "Members": "Members",
         "Contact": "Contact"
+    },
+    "Members": {
+        "Title": "Members"
+    },
+    "MemberType": {
+        "MEMBER": "Member",
+        "PRESIDENT": "President",
+        "SECRETARY": "Secretary",
+        "FOUNDATION_MEMBER": "Foundation member",
+        "FELLOW": "Fellow"
     }
 }
