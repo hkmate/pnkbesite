@@ -1,0 +1,16 @@
+<div *ngIf="!!facebookPageLink"
+     class="fb-page"
+     [attr.data-href]="facebookPageLink"
+     data-tabs="timeline, events, messages"
+     data-width="500"
+     data-height="1000"
+     data-small-header="true"
+     data-adapt-container-width="true"
+     data-hide-cover="false"
+     data-show-facepile="true">
+    <div class="fb-xfbml-parse-ignore">
+        <blockquote [attr.cite]="facebookPageLink">
+            <a [href]="facebookPageLink">{{ 'PageTitle' | translate }}</a>
+        </blockquote>
+    </div>
+</div>

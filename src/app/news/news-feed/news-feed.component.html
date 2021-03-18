@@ -1,0 +1,5 @@
+<div *ngFor="let newItem of newItems" class="card-item">
+    <p-card [header]="newItem.title">
+        <span [innerHTML]="newItem.content"></span>
+    </p-card>
+</div>

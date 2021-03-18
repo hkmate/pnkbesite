@@ -1,1 +1,14 @@
-<p>news-page works!</p>
+<h2>{{ 'News.Title' | translate }}</h2>
+
+<div class="news-panels">
+    <p-splitter>
+        <ng-template pTemplate>
+            <app-news-feed [news]="newsDescription?.news"></app-news-feed>
+        </ng-template>
+        <ng-template pTemplate>
+            <div class="facebook-feed">
+                <app-facebook-feed [facebookPageLink]="newsDescription?.facebookPageLink"></app-facebook-feed>
+            </div>
+        </ng-template>
+    </p-splitter>
+</div>

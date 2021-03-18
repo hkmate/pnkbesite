@@ -16,5 +16,8 @@
         "SECRETARY": "Secretary",
         "FOUNDATION_MEMBER": "Foundation member",
         "FELLOW": "Fellow"
+    },
+    "News": {
+        "Title": "News"
     }
 }

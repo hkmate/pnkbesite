@@ -16,5 +16,8 @@
         "SECRETARY": "Titkár",
         "FOUNDATION_MEMBER": "Alapító tag",
         "FELLOW": "Pártoló tag"
+    },
+    "News": {
+        "Title": "Hírek"
     }
 }

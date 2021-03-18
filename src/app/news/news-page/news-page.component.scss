@@ -1,0 +1,21 @@
+
+:host ::ng-deep .p-splitter {
+    background-color: var(--surface-c);
+
+    .p-splitter-gutter {
+        display: none;
+    }
+
+    .p-splitter-panel:first-of-type {
+        flex-basis: calc(100% - 540px) !important;
+    }
+
+    .p-splitter-panel:last-of-type {
+        flex-basis: 540px !important;
+    }
+}
+
+.facebook-feed {
+    padding: 20px;
+    width: 540px;
+}

@@ -1,0 +1,26 @@
+{
+    "facebookPageLink": "https://www.facebook.com/GitHub",
+    "news": [
+        {
+            "hu": {
+                "title": "Első adag",
+                "contentUrl": "content/news/content/first-block_hu.html"
+            },
+            "en": {
+                "title": "First block",
+                "contentUrl": "content/news/content/first-block_en.html"
+            }
+        },
+        {
+            "hu": {
+                "title": "Második adag",
+                "contentUrl": "content/news/content/second-block_hu.html"
+            },
+            "en": {
+                "title": "Second block",
+                "contentUrl": "content/news/content/second-block_en.html"
+            }
+        }
+    ]
+}
+
