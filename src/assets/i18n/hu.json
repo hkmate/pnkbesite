@@ -22,5 +22,14 @@
     },
     "AboutUs": {
         "Title": "Rólunk"
+    },
+    "Contact": {
+        "PresidentName": "Elnök:",
+        "Phone": "Tel.szám.:",
+        "Headquarters": "Székhely:",
+        "Site": "Gyakori tartózkodási hely:",
+        "EmailAddress": "Email cím:",
+        "Website": "Weboldal:",
+        "TaxNumber": "Adószám:"
     }
 }

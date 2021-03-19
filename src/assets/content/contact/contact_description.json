@@ -1,0 +1,13 @@
+{
+    "fullNameOfAssociation": "My favourite association",
+    "presidentName": "John Doe",
+    "phone": "+321456987",
+    "headquarters": "Pécs, Nincsilyen utca 12.",
+    "emailAddress": "asd@asd.asd",
+    "website": "https://github.com/hkmate",
+    "taxNumber": "11111111",
+    "otherInfo": {
+        "hu": "content/contact/text-info_hu.html",
+        "en": "content/contact/text-info_en.html"
+    }
+}

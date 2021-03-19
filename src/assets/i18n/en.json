@@ -22,5 +22,14 @@
     },
     "AboutUs": {
         "Title": "About us"
+    },
+    "Contact": {
+        "PresidentName": "President:",
+        "Phone": "Phone:",
+        "Headquarters": "Headquarters:",
+        "Site": "Site:",
+        "EmailAddress": "Email address:",
+        "Website": "Website",
+        "TaxNumber": "Tax number"
     }
 }

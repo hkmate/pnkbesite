@@ -22,10 +22,10 @@ export class AboutUsPageComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.loadNews();
+        this.loadData();
     }
 
-    private loadNews(): void {
+    private loadData(): void {
         this.aboutUsService.getAboutUsDescriptions().subscribe((blocks: Array<AboutUsBlock>) => {
             this.aboutUsBlocks = blocks;
             this.processBlocks();
