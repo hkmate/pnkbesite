@@ -19,5 +19,8 @@
     },
     "News": {
         "Title": "News"
+    },
+    "AboutUs": {
+        "Title": "About us"
     }
 }

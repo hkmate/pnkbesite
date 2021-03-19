@@ -19,5 +19,8 @@
     },
     "News": {
         "Title": "Hírek"
+    },
+    "AboutUs": {
+        "Title": "Rólunk"
     }
 }

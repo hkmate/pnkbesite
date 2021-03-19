@@ -1,1 +1,7 @@
-<h1>About us -- Work in process...</h1>
+<h2>{{ 'AboutUs.Title' | translate }}</h2>
+
+<div class="about-us-page">
+    <p-card *ngFor="let item of items">
+        <span [innerHTML]="item.content"></span>
+    </p-card>
+</div>
