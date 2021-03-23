@@ -17,6 +17,10 @@ export class HttpWrapperService {
     }
 
     public getHtml(url: string): Observable<string> {
+        return this.getText(url);
+    }
+
+    public getText(url: string): Observable<string> {
         return this.http.get(this.BASE_URL + url, {responseType: 'text'});
     }
 }

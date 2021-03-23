@@ -15,4 +15,11 @@
         display: inline-block;
     }
 
+    .links {
+        float: right;
+
+        i {
+            padding-left: 0.5em;
+        }
+    }
 }
