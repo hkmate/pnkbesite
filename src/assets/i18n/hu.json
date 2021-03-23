@@ -31,5 +31,8 @@
         "EmailAddress": "Email cím:",
         "Website": "Weboldal:",
         "TaxNumber": "Adószám:"
+    },
+    "Activities": {
+        "Title": "Tevékenységeink"
     }
 }

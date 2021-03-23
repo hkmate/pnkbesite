@@ -31,5 +31,8 @@
         "EmailAddress": "Email address:",
         "Website": "Website",
         "TaxNumber": "Tax number"
+    },
+    "Activities": {
+        "Title": "Activities"
     }
 }

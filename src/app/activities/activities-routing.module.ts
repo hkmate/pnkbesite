@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {NewsModule} from '../news/news.module';
 import {ActivitiesPageComponent} from './activities-page/activities-page.component';
+import {ActivitiesModule} from './activities.module';
 
 const routes: Routes = [
     {path: '', component: ActivitiesPageComponent}
@@ -11,7 +11,7 @@ const routes: Routes = [
     imports: [
         RouterModule.forChild(routes),
 
-        NewsModule
+        ActivitiesModule
     ],
     exports: [RouterModule]
 })
