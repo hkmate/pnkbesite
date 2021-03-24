@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Language} from '../../language/language';
 import {LanguageService} from '../language.service';
-import {ThemeService} from '../theme.service';
+import {ThemeService} from '../../theme/theme.service';
 import {SelectItem} from 'primeng/api';
 
 @Component({

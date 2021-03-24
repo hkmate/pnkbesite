@@ -9,7 +9,10 @@ export class LanguageService {
     private static readonly LANGUAGE_STORAGE_KEY = 'app-theme';
 
     constructor() {
-        this.init();
+    }
+
+    public init(): void {
+        // TODO...
     }
 
     public setLang(newLang: string): void {
@@ -23,10 +26,6 @@ export class LanguageService {
     }
 
     public setupDefault(): void {
-        // TODO...
-    }
-
-    private init(): void {
         // TODO...
     }
 }
