@@ -1,35 +1,35 @@
 {
     "activitiesInto": {
-        "hu": "content/activities/intro_hu.html",
-        "en": "content/activities/intro_en.html"
+        "HU": "content/activities/intro_hu.html",
+        "EN": "content/activities/intro_en.html"
     },
     "activities": [
         {
-            "hu": {
+            "HU": {
                 "title": "Tevékenység 1",
                 "contentUrl": "content/activities/act1_hu.html"
             },
-            "en": {
+            "EN": {
                 "title": "Activity 1",
                 "contentUrl": "content/activities/act1_en.html"
             }
         },
         {
-            "hu": {
+            "HU": {
                 "title": "Tevékenység 2",
                 "contentUrl": "content/activities/act2_hu.html"
             },
-            "en": {
+            "EN": {
                 "title": "Activity 2",
                 "contentUrl": "content/activities/act2_en.html"
             }
         },
         {
-            "hu": {
+            "HU": {
                 "title": "Tevékenység 3",
                 "contentUrl": "content/activities/act3_hu.html"
             },
-            "en": {
+            "EN": {
                 "title": "Activity 3",
                 "contentUrl": "content/activities/act3_en.html"
             }

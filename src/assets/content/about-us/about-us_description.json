@@ -1,10 +1,10 @@
 [
     {
-        "hu": "content/about-us/first-block_hu.html",
-        "en": "content/about-us/first-block_en.html"
+        "HU": "content/about-us/first-block_hu.html",
+        "EN": "content/about-us/first-block_en.html"
     },
     {
-        "hu": "content/about-us/second-block_hu.html",
-        "en": "content/about-us/second-block_en.html"
+        "HU": "content/about-us/second-block_hu.html",
+        "EN": "content/about-us/second-block_en.html"
     }
 ]

@@ -7,7 +7,7 @@
     "website": "https://github.com/hkmate",
     "taxNumber": "11111111",
     "otherInfo": {
-        "hu": "content/contact/text-info_hu.html",
-        "en": "content/contact/text-info_en.html"
+        "HU": "content/contact/text-info_hu.html",
+        "EN": "content/contact/text-info_en.html"
     }
 }

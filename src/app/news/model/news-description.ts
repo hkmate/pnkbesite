@@ -1,5 +1,5 @@
 import {SafeHtml} from '@angular/platform-browser';
-import {Language} from '../../language/language';
+import {I18nObject} from '../../language/i18n-object';
 
 export class NewsDescription {
     facebookPageLink: string;
@@ -15,6 +15,4 @@ export class NewsFullItem extends NewsItem {
     content: SafeHtml;
 }
 
-export type News = {
-    [key in Language]: NewsItem;
-};
+export type News = I18nObject<NewsItem>;

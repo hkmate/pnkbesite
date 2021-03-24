@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Language} from '../../language/language';
-import {LanguageService} from '../language.service';
+import {LanguageService} from '../../language/language.service';
 import {ThemeService} from '../../theme/theme.service';
 import {SelectItem} from 'primeng/api';
 
@@ -13,6 +13,8 @@ export class SettingsComponent implements OnInit {
 
     languageOptions: Array<SelectItem>;
     themeOptions: Array<SelectItem>;
+    lang: Language;
+    theme: string;
 
     constructor(private langService: LanguageService,
                 private themeService: ThemeService) {
@@ -39,5 +41,7 @@ export class SettingsComponent implements OnInit {
     private initOptions(): void {
         this.languageOptions = this.langService.getLangOptions().map(lang => ({label: lang, value: lang}));
         this.themeOptions = this.themeService.getThemeOptions().map(theme => ({label: theme, value: theme}));
+        this.lang = this.langService.getActual();
+        this.theme = this.themeService.getActual();
     }
 }

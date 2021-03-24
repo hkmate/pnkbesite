@@ -1,4 +1,4 @@
-import {Language} from '../../language/language';
+import {I18nObject} from '../../language/i18n-object';
 
 export class ContactDescription {
 
@@ -13,6 +13,4 @@ export class ContactDescription {
     otherInfo: ContactInformation;
 }
 
-export type ContactInformation = {
-    [key in Language]: string; // contentUrl
-};
+export type ContactInformation = I18nObject<string>; // contentUrl

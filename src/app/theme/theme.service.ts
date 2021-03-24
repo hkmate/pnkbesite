@@ -11,9 +11,6 @@ export class ThemeService {
 
     private actualTheme: string;
 
-    constructor() {
-    }
-
     public init(): void {
         this.actualTheme = localStorage.getItem(ThemeService.THEME_STORAGE_KEY) ?? ThemeService.DEFAULT_THEME;
         this.setupTheme();
@@ -32,6 +29,10 @@ export class ThemeService {
     public setupDefault(): void {
         this.actualTheme = ThemeService.DEFAULT_THEME;
         this.setupTheme();
+    }
+
+    public getActual(): string {
+        return this.actualTheme;
     }
 
     private setupTheme(): void {

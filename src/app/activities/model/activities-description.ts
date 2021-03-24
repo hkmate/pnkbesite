@@ -1,5 +1,6 @@
 import {SafeHtml} from '@angular/platform-browser';
 import {Language} from '../../language/language';
+import {I18nObject} from '../../language/i18n-object';
 
 export class ActivitiesDescription {
     activitiesInto: ActivitiesInto;
@@ -19,7 +20,4 @@ export type Activity = {
     [key in Language]: ActivityItem;
 };
 
-export type ActivitiesInto = {
-    [key in Language]: string; // contentUrl
-};
-
+export type ActivitiesInto = I18nObject<string>; // contentUrl
