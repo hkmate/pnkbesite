@@ -14,6 +14,7 @@
         "MEMBER": "Member",
         "PRESIDENT": "President",
         "SECRETARY": "Secretary",
+        "TECHNICAL_LEADER": "Technical leader",
         "FOUNDATION_MEMBER": "Foundation member",
         "FELLOW": "Fellow"
     },
