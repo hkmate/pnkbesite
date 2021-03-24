@@ -34,5 +34,12 @@
     },
     "Activities": {
         "Title": "Tevékenységeink"
+    },
+    "Settings": {
+        "Title": "Beállítások",
+        "Language": "Nyelv",
+        "Theme": "Téma",
+        "ClearStorage": "Tároló ürítése",
+        "StorageInfo": "Ezek a bállítások a böngésző localstorage-ába lesznek mentve. Ha nem szeretné, hogy az oldal használja a tárolót akkor ne állíton át semmit, vagy ha már megtette akkor a 'Tároló ürítése' gomb megnyomásával visszaállíthat mindent."
     }
 }

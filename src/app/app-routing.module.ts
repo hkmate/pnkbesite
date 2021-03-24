@@ -7,6 +7,7 @@ const routes: Routes = [
     {path: 'activities', loadChildren: () => import('./activities/activities-routing.module').then(m => m.ActivitiesRoutingModule)},
     {path: 'members', loadChildren: () => import('./members/members-routing.module').then(m => m.MembersRoutingModule)},
     {path: 'contact', loadChildren: () => import('./contact/contact-routing.module').then(m => m.ContactRoutingModule)},
+    {path: 'settings', loadChildren: () => import('./settings/settings-routing.module').then(m => m.SettingsRoutingModule)},
 
     {path: '', redirectTo: 'news', pathMatch: 'full'},
     {path: '**', redirectTo: 'news'}

@@ -34,5 +34,12 @@
     },
     "Activities": {
         "Title": "Activities"
+    },
+    "Settings": {
+        "Title": "Settings",
+        "Language": "Language",
+        "Theme": "Theme",
+        "ClearStorage": "Clear storage",
+        "StorageInfo": "These settings are using your browser's localstorage (it's like a cookie). If you do not want the page use the storage, you should not set any option or, if you did before just press the 'Clear storage' button to reset the default setting."
     }
 }

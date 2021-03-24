@@ -1,0 +1,12 @@
+
+.clear-storage {
+    margin: 20px 0;
+}
+
+:host ::ng-deep .p-card {
+
+    .p-card-content {
+        padding: 0;
+    }
+}
+
