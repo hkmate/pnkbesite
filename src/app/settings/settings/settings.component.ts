@@ -22,6 +22,7 @@ export class SettingsComponent implements OnInit {
 
     ngOnInit(): void {
         this.initOptions();
+        this.initActualValues();
     }
 
     languageChanged(newLang: { value: Language }): void {
@@ -36,11 +37,15 @@ export class SettingsComponent implements OnInit {
         localStorage.clear();
         this.themeService.setupDefault();
         this.langService.setupDefault();
+        this.initActualValues();
     }
 
     private initOptions(): void {
         this.languageOptions = this.langService.getLangOptions().map(lang => ({label: lang, value: lang}));
         this.themeOptions = this.themeService.getThemeOptions().map(theme => ({label: theme, value: theme}));
+    }
+
+    private initActualValues(): void {
         this.lang = this.langService.getActual();
         this.theme = this.themeService.getActual();
     }

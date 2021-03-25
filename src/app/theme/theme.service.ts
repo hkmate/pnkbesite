@@ -41,7 +41,7 @@ export class ThemeService {
     }
 
     private createCssUrl(): string {
-        return `assets/themes/${this.actualTheme}/theme.css`;
+        return `themes/${this.actualTheme}/theme.css`;
     }
 }
 

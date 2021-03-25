@@ -16,7 +16,10 @@
 </div>
 
 <div class="clear-storage">
-    <button pButton pRipple type="button" [label]="'Settings.ClearStorage' | translate"
+    <button pButton pRipple
+            type="button"
+            [label]="'Settings.ClearStorage' | translate"
+            (click)="clearStorage()"
             class="p-button-outlined"></button>
 </div>
 

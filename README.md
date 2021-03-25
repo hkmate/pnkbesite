@@ -1,6 +1,7 @@
 # Pnkbe-site
 
 This project made for create a website to my speleologist association.
+The data in the directory assets are just dummy data to developing...
 
 ## Development server
 

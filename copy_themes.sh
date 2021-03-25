@@ -1,8 +1,8 @@
 #!/bin/bash
 
-if [ ! -d "src/assets/themes" ]
+if [ ! -d "src/themes" ]
 then
-    mkdir src/assets/themes
+    mkdir src/themes
 fi
 
-cp -r node_modules/primeng/resources/themes/* src/assets/themes
+cp -r node_modules/primeng/resources/themes/* src/themes
