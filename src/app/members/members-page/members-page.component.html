@@ -16,7 +16,9 @@
             <ng-template let-member pTemplate="listItem">
                 <div class="p-col-12">
                     <div class="member-list-item p-grid">
-                        <img [src]="member.profilePicUrl" [alt]="member.firstName"/>
+                        <div class="img-wrapper">
+                            <img [src]="member.profilePicUrl" [alt]="member.firstName"/>
+                        </div>
                         <div class="member-list-detail p-as-center">
                             <div class="member-name">{{ member.lastName }} {{ member.firstName }}</div>
                             <div class="member-types">
