@@ -49,8 +49,8 @@ export class LanguageService {
         const langPriorities = [actual, browserLang, Language.HU, Language.EN];
 
         for (const lang of langPriorities) {
-            if (isNotNullOrUndefined(value[actual])) {
-                return value[actual];
+            if (isNotNullOrUndefined(value[lang])) {
+                return value[lang];
             }
         }
         return null;
