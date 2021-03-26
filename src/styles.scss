@@ -3,4 +3,9 @@ body {
     background-color: var(--surface-b);
     font-family: var(--font-family);
     color: var(--text-color);
+
+    a {
+        color: var(--text-color);
+        font-style: italic;
+    }
 }
