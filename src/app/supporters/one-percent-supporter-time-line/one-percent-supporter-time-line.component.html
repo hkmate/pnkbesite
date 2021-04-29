@@ -1,0 +1,16 @@
+<p-timeline [value]="onePercentSupports" align="alternate" styleClass="customized-timeline">
+    <ng-template pTemplate="content" let-onePercentSupport>
+        <p-card [header]="onePercentSupport.year">
+            <p>{{ 'Supporters.WholeAmount' | translate : { amount: onePercentSupport.fullAmount } }}</p>
+            <p *ngIf="onePercentSupport.spentOnActivity != 0">
+                {{ 'Supporters.SpentOnActivity' | translate : { amount: onePercentSupport.spentOnActivity } }}
+            </p>
+            <p *ngIf="onePercentSupport.spentOnOperation != 0">
+                {{ 'Supporters.SpentOnOperation' | translate : { amount: onePercentSupport.spentOnOperation } }}
+            </p>
+            <p>
+                <span [innerHTML]="translatedText[onePercentSupport.year]"></span>
+            </p>
+        </p-card>
+    </ng-template>
+</p-timeline>

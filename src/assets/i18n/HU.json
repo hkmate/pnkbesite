@@ -3,6 +3,7 @@
     "Menu": {
         "News": "Hírek",
         "AboutUs": "Rólunk",
+        "Supporters": "Támogatóink",
         "Activities": "Tevékenységek",
         "Members": "Tagjaink",
         "Contact": "Kapcsolat"
@@ -42,5 +43,13 @@
         "Theme": "Téma",
         "ClearStorage": "Tároló ürítése",
         "StorageInfo": "Ezek a bállítások a böngésző localstorage-ába lesznek mentve. Ha nem szeretné, hogy az oldal használja a tárolót akkor ne állíton át semmit, vagy ha már megtette akkor a 'Tároló ürítése' gomb megnyomásával visszaállíthat mindent."
+    },
+    "Supporters": {
+        "Title": "Támogatóink",
+        "IndividualSupporters": "Egyéni támogatóink",
+        "OnePercentSupports": "Adó 1% adományok",
+        "WholeAmount": "Ebben az évben hozzánk juttatott összeg: {{amount}} Ft",
+        "SpentOnActivity": "Cél szerinti tevékenységre felhasznált összeg: {{amount}} Ft.",
+        "SpentOnOperation": "Működésre felhasznált összeg: {{amount}} Ft."
     }
 }

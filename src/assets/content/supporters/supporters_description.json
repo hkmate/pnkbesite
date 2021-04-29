@@ -1,0 +1,56 @@
+{
+    "contentUrl": {
+        "HU": "content/supporters/supporters_hu.html",
+        "EN": "content/supporters/supporters_en.html"
+    },
+    "individualSupporters": [
+        {
+            "name": "John Doe"
+        },
+        {
+            "name": "Jane Doe"
+        },
+        {
+            "name": "Something Corporation",
+            "logo": "assets/content/supporters/img/smtg.png",
+            "url": "http://github.com"
+        },
+        {
+            "name": "Another Corporation",
+            "logo": "assets/content/supporters/img/other.png",
+            "url": "http://guthib.com"
+        }
+    ],
+    "onePercentageSupports": [
+        {
+            "year": 2020,
+            "fullAmount": 100000,
+            "spentOnActivity": 80000,
+            "spentOnOperation": 20000,
+            "description": {
+                "HU": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a aliquet enim. In in finibus sapien.",
+                "EN": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a aliquet enim. In in finibus sapien."
+            }
+        },
+        {
+            "year": 2019,
+            "fullAmount": 110000,
+            "spentOnActivity": 110000,
+            "spentOnOperation": 0,
+            "description": {
+                "HU": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+                "EN": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+            }
+        },
+        {
+            "year": 2018,
+            "fullAmount": 2000,
+            "spentOnActivity": 0,
+            "spentOnOperation": 2000,
+            "description": {
+                "HU": "Donec pretium, diam non interdum semper, libero risus tempus neque, nec gravida quam risus at nisi.",
+                "EN": "Donec pretium, diam non interdum semper, libero risus tempus neque, nec gravida quam risus at nisi."
+            }
+        }
+    ]
+}

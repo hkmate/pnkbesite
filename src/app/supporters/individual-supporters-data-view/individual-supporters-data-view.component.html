@@ -1,0 +1,40 @@
+<p-dataView [value]="individualSupporters"
+            [paginator]="false"
+            filterBy="name"
+            layout="list">
+    <ng-template pTemplate="header">
+        <div class="header-line">
+            <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
+        </div>
+    </ng-template>
+    <ng-template let-supporter pTemplate="listItem">
+        <div class="p-col-12">
+            <div class="supporter-list-item p-grid">
+                <div *ngIf="!!supporter.logo" class="img-wrapper">
+                    <img [src]="supporter.logo" [alt]="supporter.name"/>
+                </div>
+                <div class="supporter-list-detail p-as-center">
+                    <div *ngIf="!!supporter.url" class="supporter-name">
+                        <a [href]="supporter.url">{{ supporter.name }}</a>
+                    </div>
+                    <div *ngIf="!supporter.url" class="supporter-name">{{ supporter.name }}</div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <ng-template let-supporter pTemplate="gridItem">
+        <div class="p-col-12 p-md-4 p-lg-2">
+            <div class="p-col-12">
+                <div class="supporter-grid-item">
+                    <img *ngIf="!!supporter.logo" [src]="supporter.logo" [alt]="supporter.name"/>
+                    <div class="supporter-grid-detail">
+                        <div *ngIf="!!supporter.url" class="supporter-name">
+                            <a [href]="supporter.url">{{ supporter.name }}</a>
+                        </div>
+                        <div *ngIf="!supporter.url" class="supporter-name">{{ supporter.name }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</p-dataView>

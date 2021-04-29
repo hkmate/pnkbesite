@@ -28,6 +28,7 @@ export class MenuComponent implements OnInit, OnDestroy {
         this.menuItems = [
             {label: this.translateService.instant('Menu.News'), routerLink: 'news'},
             {label: this.translateService.instant('Menu.AboutUs'), routerLink: 'about-us'},
+            {label: this.translateService.instant('Menu.Supporters'), routerLink: 'supporters'},
             {label: this.translateService.instant('Menu.Activities'), routerLink: 'activities'},
             {label: this.translateService.instant('Menu.Members'), routerLink: 'members'},
             {label: this.translateService.instant('Menu.Contact'), routerLink: 'contact'},

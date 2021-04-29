@@ -1,0 +1,19 @@
+<h2>{{ 'Supporters.Title' | translate }}</h2>
+
+<ng-container *ngIf="supporterInfo">
+    <div class="p-card supporters-text">
+        <span [innerHTML]="textInfo"></span>
+    </div>
+
+    <div class="supporters-table">
+        <h4>{{ 'Supporters.IndividualSupporters' | translate }}</h4>
+        <app-individual-supporters-data-view [individualSupporters]="supporterInfo.individualSupporters">
+        </app-individual-supporters-data-view>
+    </div>
+
+    <div class="one-percent-supporters-timeline">
+        <h4>{{ 'Supporters.OnePercentSupports' | translate }}</h4>
+        <app-one-percent-supporter-time-line [onePercentSupports]="supporterInfo.onePercentageSupports">
+        </app-one-percent-supporter-time-line>
+    </div>
+</ng-container>

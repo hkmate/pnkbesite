@@ -11,7 +11,6 @@ export class LanguageService {
 
     private static readonly LANGUAGE_STORAGE_KEY = 'app-language';
 
-
     constructor(private translateService: TranslateService) {
     }
 

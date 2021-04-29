@@ -1,0 +1,48 @@
+
+.header-line {
+    text-align: right;
+    display: block;
+}
+
+.supporter-list-item {
+
+    vertical-align: middle;
+    padding: .5em 1em 0 1em;
+
+    .img-wrapper {
+        width: 80px;
+        text-align: center;
+
+        img {
+            max-width: 50px;
+            max-height: 50px;
+            display: inline-block;
+            margin: 5px 0 5px 0;
+        }
+    }
+
+    .member-types {
+        padding-left: 5px;
+    }
+}
+
+.supporter-grid-item {
+
+    vertical-align: middle;
+    text-align: center;
+
+    img {
+        max-width: 30%;
+        max-height: 30%;
+    }
+}
+
+.supporter-grid-detail, .supporter-list-detail {
+
+    display: inline-block;
+
+    .supporter-name {
+        font-weight: bold;
+        padding: 5px;
+    }
+}

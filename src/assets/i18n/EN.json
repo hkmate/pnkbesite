@@ -3,6 +3,7 @@
     "Menu": {
         "News": "News",
         "AboutUs": "About us",
+        "Supporters": "Supporters",
         "Activities": "Activities",
         "Members": "Members",
         "Contact": "Contact"
@@ -42,5 +43,13 @@
         "Theme": "Theme",
         "ClearStorage": "Clear storage",
         "StorageInfo": "These settings are using your browser's localstorage (it's like a cookie). If you do not want the page use the storage, you should not set any option or, if you did before just press the 'Clear storage' button to reset the default setting."
+    },
+    "Supporters": {
+        "Title": "Supporters",
+        "IndividualSupporters": "Individual supporters",
+        "OnePercentSupports": "One percent supports",
+        "WholeAmount": "We get {{amount}}Ft in this year.",
+        "SpentOnActivity": "We spent {{amount}}Ft on our activities.",
+        "SpentOnOperation": "We spent {{amount}}Ft on the opertaion of the association."
     }
 }
