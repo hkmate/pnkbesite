@@ -3,36 +3,59 @@
         "HU": "content/activities/intro_hu.html",
         "EN": "content/activities/intro_en.html"
     },
-    "activities": [
+    "activityGroups": [
         {
-            "HU": {
-                "title": "Tevékenység 1",
-                "contentUrl": "content/activities/act1_hu.html"
+            "name": {
+                "HU": "group1"
             },
-            "EN": {
-                "title": "Activity 1",
-                "contentUrl": "content/activities/act1_en.html"
-            }
+            "items": [
+                {
+                    "id": "act1",
+                    "i18n": {
+                        "HU": {
+                            "title": "Tevékenység 1",
+                            "contentUrl": "content/activities/act1_hu.html"
+                        },
+                        "EN": {
+                            "title": "Activity 1",
+                            "contentUrl": "content/activities/act1_en.html"
+                        }
+                    }
+                },
+                {
+                    "id": "act2",
+                    "i18n": {
+                        "HU": {
+                            "title": "Tevékenység 2",
+                            "contentUrl": "content/activities/act2_hu.html"
+                        },
+                        "EN": {
+                            "title": "Activity 2",
+                            "contentUrl": "content/activities/act2_en.html"
+                        }
+                    }
+                }
+            ]
         },
         {
-            "HU": {
-                "title": "Tevékenység 2",
-                "contentUrl": "content/activities/act2_hu.html"
+            "name": {
+                "HU": "group2"
             },
-            "EN": {
-                "title": "Activity 2",
-                "contentUrl": "content/activities/act2_en.html"
-            }
-        },
-        {
-            "HU": {
-                "title": "Tevékenység 3",
-                "contentUrl": "content/activities/act3_hu.html"
-            },
-            "EN": {
-                "title": "Activity 3",
-                "contentUrl": "content/activities/act3_en.html"
-            }
+            "items": [
+                {
+                    "id": "act3",
+                    "i18n": {
+                        "HU": {
+                            "title": "Tevékenység 3",
+                            "contentUrl": "content/activities/act3_hu.html"
+                        },
+                        "EN": {
+                            "title": "Activity 3",
+                            "contentUrl": "content/activities/act3_en.html"
+                        }
+                    }
+                }
+            ]
         }
     ]
 }

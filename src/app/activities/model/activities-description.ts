@@ -4,10 +4,26 @@ import {I18nObject} from '../../language/i18n-object';
 
 export class ActivitiesDescription {
     activitiesInto: ActivitiesInto;
-    activities: Array<Activity>;
+    activityGroups: Array<ActivityGroup>;
+}
+
+export class ActivityGroup {
+    name: I18nObject<string>;
+    items: Array<Activity>;
+}
+
+export type ActivitySelection = Array<{
+    group: boolean;
+    items: Array<boolean>;
+}>;
+
+export class FullActivityGroup {
+    name: string;
+    items: Array<ActivityFullItem>;
 }
 
 export class ActivityItem {
+    id: string;
     title: string;
     contentUrl: string;
 }
@@ -17,7 +33,10 @@ export class ActivityFullItem extends ActivityItem {
 }
 
 export type Activity = {
-    [key in Language]: ActivityItem;
+    id: string;
+    i18n: {
+        [key in Language]: ActivityItem;
+    };
 };
 
 export type ActivitiesInto = I18nObject<string>; // contentUrl

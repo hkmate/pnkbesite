@@ -5,11 +5,24 @@
 </p-card>
 
 <div>
-    <p-accordion *ngIf="activities" [multiple]="true">
-        <ng-container *ngFor="let activity of activities">
-            <p-accordionTab [header]="activity.title">
-                <span [innerHTML]="activity.content"></span>
-            </p-accordionTab>
+    <p-accordion *ngIf="activityGroups" [multiple]="true">
+        <ng-container *ngFor="let activityGroup of activityGroups; index as groupIndex">
+            <ng-container *ngIf="activityGroup.items?.length">
+                <p-accordionTab [header]="activityGroup.name" [(selected)]="tabSelectionMatrix[groupIndex].group">
+
+
+                    <p-accordion [multiple]="true">
+                        <ng-container *ngFor="let activity of activityGroup.items; index as activityIndex">
+                            <p-accordionTab [header]="activity.title"
+                                            [(selected)]="tabSelectionMatrix[groupIndex].items[activityIndex]">
+                                <span [innerHTML]="activity.content"></span>
+                            </p-accordionTab>
+                        </ng-container>
+                    </p-accordion>
+
+
+                </p-accordionTab>
+            </ng-container>
         </ng-container>
     </p-accordion>
 </div>
