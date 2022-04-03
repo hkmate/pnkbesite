@@ -1,6 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpWrapperService} from '../../http-wrapper/http-wrapper.service';
 
+
+interface LinkData {
+    facebookLink: string;
+    youtubeLink: string;
+}
+
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
@@ -8,14 +14,14 @@ import {HttpWrapperService} from '../../http-wrapper/http-wrapper.service';
 })
 export class HeaderComponent implements OnInit {
 
-    private static readonly FACEBOOK_LINK_URL = 'content/general/facebook-link.txt';
+    private static readonly LINK_URLS = 'content/general/links.json';
 
-    facebookLink: string;
+    links: LinkData;
 
     constructor(private http: HttpWrapperService) {
     }
 
     ngOnInit(): void {
-        this.http.getText(HeaderComponent.FACEBOOK_LINK_URL).subscribe((link: string) => this.facebookLink = link);
+        this.http.get<LinkData>(HeaderComponent.LINK_URLS).subscribe((links: LinkData) => this.links = links);
     }
 }

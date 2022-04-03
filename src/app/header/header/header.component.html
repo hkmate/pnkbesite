@@ -2,7 +2,10 @@
     <img src="assets/logo/logo.png" class="logo">
     <h1>{{ 'PageTitle' | translate }}</h1>
     <div class="links">
-        <a [href]="facebookLink"><i class="pi pi-facebook"></i></a>
+        <ng-container *ngIf="links">
+            <a [href]="links.facebookLink"><i class="pi pi-facebook"></i></a>
+            <a [href]="links.youtubeLink"><i class="pi pi-youtube"></i></a>
+        </ng-container>
         <i class="pi pi-cog" routerLink="settings"></i>
     </div>
 </div>
